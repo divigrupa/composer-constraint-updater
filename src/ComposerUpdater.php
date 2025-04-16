@@ -16,6 +16,6 @@ class ComposerUpdater
             $output = 'Shell exec didn\'t finish correctly.';
         }
 
-        return $output;
+        return $output ?? '';
     }
 }
