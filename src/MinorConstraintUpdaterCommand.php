@@ -14,7 +14,7 @@ class MinorConstraintUpdaterCommand extends BaseCommand
 {
     private ComposerUpdater $composerUpdater;
 
-    public function __construct(string $name = null, ?ComposerUpdater $composerUpdater = null)
+    public function __construct(?string $name = null, ?ComposerUpdater $composerUpdater = null)
     {
         $this->composerUpdater = $composerUpdater ?? new ComposerUpdater();
         parent::__construct($name);
